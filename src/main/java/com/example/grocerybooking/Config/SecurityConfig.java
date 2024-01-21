@@ -20,12 +20,6 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-    private static final String[] AUTH_WHITE_LIST = {
-            "/v3/api-docs/**",
-            "/swagger-ui/**",
-            "/v2/api-docs/**",
-            "/swagger-resources/**"
-    };
     @Bean
     public UserDetailsService userDetailsService(){
 
